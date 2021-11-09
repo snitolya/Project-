@@ -20,6 +20,7 @@ header{
 height: 80px;
 width: 100%;
 background: rgba(0, 0, 0, 0.2);
+z-index: 2; /*текст в headere поверх картинки*/
 
 position: absolute;
 }
@@ -61,4 +62,42 @@ margin-right: 25px;
 
 .header-nav ul li:last-child{ /*последний элемент, редактирование, для первого элемента - first-child, второй/третий элемент в скобках прописываем- ntn-child(2)*/
 margin-right: 0px;
+}
+.header-flex-2, .header-social ul{ /*выставляем в ряд*/
+display: flex;
+
+}
+.header-social ul li{
+    margin-right: 18px;
+}
+.header-social ul li:last-child {
+    margin-right: 0px;
+}
+.header-social{
+    margin: 0px 17px;
+    border-left: 0.5px solid #E5E5E5; /*чёрточки  взяты с сайта коды*/
+    border-right: 0.5px solid #E5E5E5;
+    padding: 0px 17px;
+}
+.banner{
+    position:relative; /*меняет точку исчисления для дочерних элементов*/
+}
+.banner-info{
+    position: absolute;/*т.к.дочерний класс*/
+    width: 530px;
+    left: 70px;
+    bottom: 140px;
+ 
+}
+.tag{
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 5px 10px;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+
+    color: #ffffff;
 }
