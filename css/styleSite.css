@@ -3,35 +3,62 @@
     padding: 0px;
 }
 a {
-    text-decoration: none;
+text-decoration: none;
     }
-    ul{
-        list-style: none;
+ul{
+list-style: none;
     }
-    body{
-        font-family: 'Lora', serif;
-        font-weight: 400;
+body{
+font-family: 'Lora', serif;
+font-weight: 400;
     }
-    .font-roboto{
-        font-family: 'Roboto' , sans-serif;
-        font-weight: 700;
+.font-roboto , .font-roboto a{
+font-family: 'Roboto' , sans-serif;
+font-weight: 700;
     }
-    header{
-        height: 80px;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.2);
+header{
+height: 80px;
+width: 100%;
+background: rgba(0, 0, 0, 0.2);
 
-        position: absolute;
-    }
-    .banner img{
-        width: 100%;
-        height: 600px;
-        object-fit: cover; /*заполнение картинкой выделенной области*/
+position: absolute;
+}
 
-    }
-    .header-flex{
-        padding: 0px 70px;
-        display: flex;
-        justify-content: space-between; /*разброс по сторонам*/
-        align-items: center;
-    }
+.banner img{
+width: 100%;
+height: 600px;
+object-fit: cover; /*заполнение картинкой выделенной области*/
+}
+
+.header-flex{
+padding: 0px 70px;
+display: flex;
+justify-content: space-between; /*разброс по сторонам*/
+align-items: center;
+height: 100%;
+}
+
+.header-nav ul{ /*выстраиваем в линию*/
+display: flex;
+align-items: center;
+}
+
+.header-nav ul li a{
+font-size: 12px;
+line-height: 14px;
+color: #e5e5e5; /*цвет текста в шапке*/
+transition: all 0.3s;
+}
+
+.header-nav ul li a:hover{
+color: #fff;
+transition: all 0.3s;
+}
+
+.header-nav ul li{
+margin-right: 25px;
+}
+
+.header-nav ul li:last-child{ /*последний элемент, редактирование, для первого элемента - first-child, второй/третий элемент в скобках прописываем- ntn-child(2)*/
+margin-right: 0px;
+}
