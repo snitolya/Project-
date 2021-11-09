@@ -101,3 +101,9 @@ display: flex;
 
     color: #ffffff;
 }
+.middle-line{
+    height: 1px;
+    min-width: 30px;
+    background: #e5e5e5;
+    margin: 0px 11px;
+}
